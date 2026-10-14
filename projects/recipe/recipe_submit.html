@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Project</title>
+</head>
+<body>
+    <header>
+      <p>Charles's Cooking</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="carne_asada.html">Carne Asada</a>
+        <a href="chicken_quesadillas.html">Chicken Quesadillas</a>
+        <a href="elote.html">Elote</a>
+        <a href="recipe_submit.html">Recipe Submit</a>
+      </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contribute a Recipe</h1>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="">Select a Category</option>
+                        <option value="appetizer">Appetizer</option>
+                        <option value="mainCourse">Main Course</option>
+                        <option value="desert">Desert</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="recipe">Recipe</label>
+                    <textarea name="recipe" id="recipe" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Charles's Cooking. All rights reserved.</p>
+      <p>Recipes and photos by Charles Roush</p>
+    </footer>
+    
+</body>
+</html>
