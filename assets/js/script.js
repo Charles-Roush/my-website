@@ -8,7 +8,7 @@ for (let i = 0; i < height; i++) {
     full_len = 2*i + 1
     blank_len = (w-full_len)/2
     console.log(blank_len)
-    console.log(blank_char * blank_len + full_char *)
+    console.log(blank_char * blank_len + full_char * full_len)
 }
 
 // bill_amount = Number(prompt("bill amount:\n"))

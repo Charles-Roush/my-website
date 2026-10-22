@@ -1,0 +1,19 @@
+div {
+    border: 2px solid black;
+}
+/*40 pixels on the left side (+2 if counting border)*/
+/*50 pixels from bottom of 2 to top of 3 (+4 if counting border)*/
+/*Box one's backround color expanded because instead of margin it used padding, which makes room inside the box*/
+.box-1 { 
+    background-color:coral;
+    padding: 40px;
+}
+.box-2 { 
+    background-color: chocolate;
+    margin: 50px;
+}
+.box-3 { 
+    background-color: yellowgreen;
+    padding: 10px;
+    margin-top: 100px;
+}
