@@ -1,0 +1,3 @@
+# My Website
+## Info
+- Color Scheme: https://coolors.co 2274a5-e7dfc6-e9f1f7-131b23-816c61
