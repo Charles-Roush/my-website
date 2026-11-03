@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap">
+    <link rel="stylesheet" href="style.css">
     <title>Recipe Project</title>
 </head>
 <body>
@@ -19,8 +22,9 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Our Recipes</h1>
+        <section class="hero-card">
+            <div class="img-cover">
+                <h1>Our Recipes</h1>
             <p>
                 A collection of my favorite Mexican-inspired dishes, from smoky
                 grilled carne asada to cheesy chicken quesadillas and classic
@@ -28,30 +32,32 @@
                 but full of bold flavor. Have a favorite of your own? Share it on
                 the Recipe Submit page!
             </p>
+            </div>
         </section>
         
         <section>
             <h2>Browse Recipes</h2>
             <ul>
-                <li>
-                    <a href="carne_asada.html">
-                        <img src="images/carne_asada.avif" alt="Sliced grilled carne asada on a cutting board" width="200" height="160">
-                        Carne Asada
-                    </a>
-                </li>
-                <li>
-                    <a href="chicken_quesadillas.html">
-                        <img src="images/chicken_quesadillas.jpg" alt="Golden chicken quesadillas cut into wedges" width="200" height="200">
-                        Chicken Quesadillas
-                    </a>
-                </li>
-                <li>
-                    <a href="elote.html">
-                        <img src="images/elote.webp" alt="Grilled corn on the cob topped with cotija cheese and chili powder" width="200" height="133">
-                        Elote
-                    </a>
-                </li>
-                <li><a href="recipe_submit.html">Recipe Submit</a></li>
+                <div class="recipe-card">
+                    <p>Carne Asada Plate</p>
+                    <img src="images/carne_asada.avif" 
+                    alt="Sliced grilled carne asada on a cutting board">
+                    <a href="carne_asada.html">Carne Asada</a>
+                    
+                </div>
+                <div class="recipe-card">
+                    <p>Chicken Quesadillas</p>
+                    <img src="images/chicken_quesadillas.jpg"
+                    alt="Golden chicken quesadillas cut into wedges">
+                    <a href="chicken_quesadillas.html">Chicken Quesadillas</a>
+                </div>
+                <div class="recipe-card">
+                    <p>Street-Style Elote</p>
+                    <img src="images/elote.webp"
+                    alt="Grilled corn on the cob topped with cotija cheese and chili powder">
+                    <a href="elote.html">Elote</a>
+                </div>
+                <div class="recipe-card"> <a href="recipe_submit.html">Recipe Submit</a></div>
             </ul>
         </section>
     </main>

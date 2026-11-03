@@ -1,9 +1,70 @@
-h1 {
-    color: blue;
+:root {
+  --color-a: #c2410c; 
+  --color-b: #2f6b4f; 
+  --color-c: #f4e1c1;
+
+  --bg: #fdf6ec; 
+  --text: #2b1d14;   
+  --opaque: #2030299f;
+  --on-accent: #ffffff;
 }
+
 body {
-    background-color: yellow;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: "DM Sans", sans-serif;
+  color: var(--text);
 }
-p {
-    size: 20;
+header {
+  background-color: var(--color-c);
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-radius: 3rem 0;
+}
+nav a {
+    background-color: var(--color-a);
+    border-radius: 3rem;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: var(--on-accent);
+}
+
+.hero-card {
+  color: var(--on-accent);
+  background-image: url("images/veggies.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  
+}
+.img-cover {
+  width: 22rem;
+  padding: 2rem;
+  background-color: var(--opaque);
+  border-radius: 3rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.577);
+}
+.recipe-card {
+    width: 28rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--color-c);
+    border-radius: 2rem;
+    margin: 2rem;
+    box-shadow: 3px 3px 1px var(--opaque);
+}
+.recipe-card img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.recipe-card a {
+    text-decoration: none;
+    color: var(--on-accent);
+    padding: 0.5rem;
+    background-color: var(--color-a);
+    border-radius: 2rem;
+
 }
