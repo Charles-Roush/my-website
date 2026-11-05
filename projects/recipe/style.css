@@ -1,10 +1,10 @@
 :root {
-  --color-a: #c2410c; 
-  --color-b: #2f6b4f; 
+  --color-a: #c2410c;
+  --color-b: #2f6b4f;
   --color-c: #f4e1c1;
 
-  --bg: #fdf6ec; 
-  --text: #2b1d14;   
+  --bg: #fdf6ec;
+  --text: #2b1d14;
   --opaque: #2030299f;
   --on-accent: #ffffff;
 }
@@ -22,11 +22,25 @@ header {
   border-radius: 3rem 0;
 }
 nav a {
-    background-color: var(--color-a);
-    border-radius: 3rem;
-    padding: 0.4rem;
-    text-decoration: none;
-    color: var(--on-accent);
+  background-color: var(--color-a);
+  border-radius: 3rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: var(--on-accent);
+}
+.fa-heart{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color:  var(--color-a);
+  font-size: 28px;
+  cursor:pointer;
+  transition: all 0.4s;
+  transition-timing-function: ease-out;
+}
+.fa-heart:hover {
+  transform: scale(1.3);
+  color: var(--color-b);
 }
 
 .hero-card {
@@ -35,36 +49,35 @@ nav a {
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
-  
 }
 .img-cover {
   width: 22rem;
   padding: 2rem;
   background-color: var(--opaque);
   border-radius: 3rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.577);
 }
 .recipe-card {
-    width: 28rem;
-    font-weight: bold;
-    padding: 1rem;
-    background-color: var(--color-c);
-    border-radius: 2rem;
-    margin: 2rem;
-    box-shadow: 3px 3px 1px var(--opaque);
+  position: relative;
+  width: 20rem;
+  font-weight: bold;
+  padding: 2rem;
+  background-color: var(--color-c);
+  border-radius: 2rem;
+  margin: 2rem;
+  box-shadow: 3px 3px 1px var(--opaque);
 }
 .recipe-card img {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 .recipe-card a {
-    text-decoration: none;
-    color: var(--on-accent);
-    padding: 0.5rem;
-    background-color: var(--color-a);
-    border-radius: 2rem;
-
+  text-decoration: none;
+  color: var(--on-accent);
+  padding: 0.5rem;
+  background-color: var(--color-a);
+  border-radius: 2rem;
 }
