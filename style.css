@@ -21,8 +21,33 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 50px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header img {
+  justify-self: flex-start;
+  margin: 1rem 2rem 1rem 2rem
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+div p {
+  margin: 1rem;
+}
 nav a {
     background-color: var(--color-a);
     border-radius: 50px;
@@ -32,8 +57,12 @@ nav a {
     display: inline-block;
     transition: all 0.2s;
     transition-timing-function: ease-in-out;
+    margin: 1rem 0.5rem 1rem 0.5rem
 }
 
+footer nav a {
+  font-size: 2rem;
+}
 nav a:hover {
   background-color: var(--text);
   color: var(--color-c);
@@ -41,9 +70,6 @@ nav a:hover {
 }
 .activeLink {
   background-color: var(--color-b);
-}
-div {
-  border: 2px solid black;
 }
 .box-outer {
 
